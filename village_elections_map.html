@@ -1,0 +1,2069 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_980d901f7e5d11db5a91471bee24a86f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_980d901f7e5d11db5a91471bee24a86f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_980d901f7e5d11db5a91471bee24a86f = L.map(
+                "map_980d901f7e5d11db5a91471bee24a86f",
+                {
+                    center: [29.053353909176614, 78.90808427357317],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f39009c3e045133e2b539335113626f0 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png?key=cb1_3juu_1_7925943fe3cbab60a8e2980b",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f39009c3e045133e2b539335113626f0.addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            var circle_marker_950310a41329f28c3f573dc7f4b7da02 = L.circleMarker(
+                [29.007070051750418, 78.8577076686188],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_950310a41329f28c3f573dc7f4b7da02.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village:  MEVO WALI MILAK </b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 460</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 371</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 15</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 1</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 429</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">371</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">15</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">1</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bccd5631b74d4fd14fddb9e1651c6360 = L.circleMarker(
+                [29.001736408843303, 78.86226404693546],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_bccd5631b74d4fd14fddb9e1651c6360.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Adonagli</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 790</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 194</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 188</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 308</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 422</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">194</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">188</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">308</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_912e858ceb496b18ab0329abd0728575 = L.circleMarker(
+                [29.035675406127822, 78.88222218254448],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_912e858ceb496b18ab0329abd0728575.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: BAHERI ROSHANPUR</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 4242</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 872</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 2055</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 161</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 401</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">5</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">786</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">10</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 402</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">319</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">421</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">24</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 403</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">170</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">415</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">125</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 404</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">378</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">433</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">2</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc14c613f75c13727568853a618191fb = L.circleMarker(
+                [29.07614231290237, 78.92739467023203],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_bc14c613f75c13727568853a618191fb.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Badhpura Mazra Kuri</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 643</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 201</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 89</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 189</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 374</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">201</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">89</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">189</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_77a51d5c97faae99dfc87a009acb04dc = L.circleMarker(
+                [29.083983586795593, 78.9246191945817],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_77a51d5c97faae99dfc87a009acb04dc.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Bahoranpur Majra Kuri</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 490</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 329</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 26</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 83</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 376</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">329</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">26</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">83</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d088a9391bf70ee364e061e849235fe2 = L.circleMarker(
+                [29.017397606047684, 78.89223506381818],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_d088a9391bf70ee364e061e849235fe2.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Bhagtpur Tanda</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 3327</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 201</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 2249</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 24</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 411</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">1</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">743</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">10</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 412</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">19</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">558</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">1</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 413</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">54</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">524</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">11</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 414</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">127</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">424</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">2</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_79c00d29afae54f2b746e3491ab4bc5d = L.circleMarker(
+                [29.05338418664003, 78.91426495037915],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_79c00d29afae54f2b746e3491ab4bc5d.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Bhanpur Gajraula</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 966</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 850</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 33</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 5</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 389</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">850</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">33</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">5</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_64ed828aa50a6e734ae6294e5aa28c85 = L.circleMarker(
+                [29.096332570297267, 78.93078891079449],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_64ed828aa50a6e734ae6294e5aa28c85.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Bhawanipur</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 572</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 411</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 53</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 0</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 366</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">411</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">53</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">0</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2f5e43739f84e7823b7edeeb7157589 = L.circleMarker(
+                [29.085538958711936, 78.90784264346102],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_d2f5e43739f84e7823b7edeeb7157589.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Bilawala</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 1483</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 806</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 403</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 18</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 372</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">587</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">78</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">14</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 373</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">219</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">325</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">4</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1054d14d905ba664d4e96ab9337bb16 = L.circleMarker(
+                [29.107813229059985, 78.91513810622088],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_b1054d14d905ba664d4e96ab9337bb16.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Burhanpur</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 4432</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 1339</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 1825</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 534</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 367</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">693</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">200</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">7</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 368</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">87</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">667</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">7</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 369</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">328</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">436</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">6</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 370</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">121</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">235</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">264</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 371</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">110</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">287</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">250</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_be81f9aa0582bca71df6ac99a8768e42 = L.circleMarker(
+                [29.125542242082197, 78.97617743454691],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_be81f9aa0582bca71df6ac99a8768e42.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Chak Lohra</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 786</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 15</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 706</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 2</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 360</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">15</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">706</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">2</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b45dd7023e1fb91c8db984dc4f8fc61c = L.circleMarker(
+                [29.000552179803037, 78.85100640216075],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_b45dd7023e1fb91c8db984dc4f8fc61c.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Chandpur</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 4202</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 1061</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 1823</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 204</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 423</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">329</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">348</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">69</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 424</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">38</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">586</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">10</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 425</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">272</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">286</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">1</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 426</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">188</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">417</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">8</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 427</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">234</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">186</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">116</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_08d5ae9678e1e3f52d63455abc4dcbff = L.circleMarker(
+                [29.09715840849615, 78.95412952693842],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_08d5ae9678e1e3f52d63455abc4dcbff.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Chaturpur Naik</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 1525</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 879</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 324</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 204</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 364</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">456</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">154</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">203</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 365</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">423</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">170</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">1</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a463718dc129402c8156a7eb00ef72c1 = L.circleMarker(
+                [29.02104519955941, 78.86961922018921],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_a463718dc129402c8156a7eb00ef72c1.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Daulpuri</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 3599</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 130</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 2423</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 80</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 405</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">47</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">643</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">34</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 406</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">39</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">544</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">9</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 407</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">16</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">745</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">20</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 408</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">28</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">491</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">17</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9f4134be961380438296b44e973c3e8 = L.circleMarker(
+                [29.0380269182783, 78.92820035091187],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_c9f4134be961380438296b44e973c3e8.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Firozpur</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 588</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 228</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 13</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 261</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 393</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">228</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">13</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">261</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_270e8048a0c7d1dcbef695a050c9dcd3 = L.circleMarker(
+                [29.007070051750418, 78.8577076686188],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_270e8048a0c7d1dcbef695a050c9dcd3.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Ghosipura</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 475</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 195</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 64</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 110</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 428</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">195</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">64</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">110</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a1b9fb2788da0b9d6cb0236e2baf6aa = L.circleMarker(
+                [28.99139148685746, 78.85226156962649],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_1a1b9fb2788da0b9d6cb0236e2baf6aa.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Jahidpur Sikampur Mustahkam</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 3770</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 317</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 2115</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 212</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 430</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">124</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">410</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">104</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 431</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">74</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">451</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">58</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 432</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">19</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">494</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">13</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 433</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">100</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">760</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">37</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_576a2980ec923744b1a80f0fd77dc9f0 = L.circleMarker(
+                [29.0133293007726, 78.86788298644908],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_576a2980ec923744b1a80f0fd77dc9f0.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Kachnal</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 1601</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 481</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 677</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 44</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 420</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">412</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">134</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">39</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 421</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">69</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">543</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">5</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7a3af924852b3ee7fefdec71df85cdd4 = L.circleMarker(
+                [29.069655118280945, 78.91597157763387],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_7a3af924852b3ee7fefdec71df85cdd4.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Kala Jhanda</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 337</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 245</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 16</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 30</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 385</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">245</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">16</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">30</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1712752bda056f39aab563f279f9c058 = L.circleMarker(
+                [29.0824968622299, 78.90467157207256],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_1712752bda056f39aab563f279f9c058.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Kariya Nagla Ahatmali</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 432</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 248</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 15</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 91</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 375</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">248</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">15</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">91</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf26cfe069a352b3ac3a9e0acccd8a22 = L.circleMarker(
+                [29.04496736970256, 78.8748467173019],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_cf26cfe069a352b3ac3a9e0acccd8a22.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Kotla Nagla Mustahkam</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 1486</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 178</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 836</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 104</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 409</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">176</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">419</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">61</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 410</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">2</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">417</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">43</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e2a8427da86de5eb5e98abb5f11647a5 = L.circleMarker(
+                [29.08127284251323, 78.94286156172682],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_e2a8427da86de5eb5e98abb5f11647a5.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Kukarjhundi</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 1907</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 576</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 689</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 299</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 377</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">286</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">459</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">159</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 378</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">290</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">230</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">140</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4434347c1b921f2356912a9198f89a0f = L.circleMarker(
+                [29.040332448232203, 78.91314493450092],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_4434347c1b921f2356912a9198f89a0f.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Lakhanpur Ladpur</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 1289</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 39</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 1006</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 47</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 391</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">24</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">540</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">28</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 392</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">15</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">466</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">19</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3270b21f2dd8069e2ef54d7d9b2ac6a0 = L.circleMarker(
+                [29.062653833929, 78.94421314381064],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_3270b21f2dd8069e2ef54d7d9b2ac6a0.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Lalpur Prohit</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 843</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 207</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 137</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 325</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 379</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">207</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">137</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">325</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac2754235dc3745f8994d98ccaa71023 = L.circleMarker(
+                [29.056526019302712, 78.89130421027049],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_ac2754235dc3745f8994d98ccaa71023.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Lalpur barahi</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 1697</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 770</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 496</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 52</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 386</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">554</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">194</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">9</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 387</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">216</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">302</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">43</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1f608b8055c62ea3ab94ec9bc0a66349 = L.circleMarker(
+                [29.01329431956015, 78.9147391172576],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_1f608b8055c62ea3ab94ec9bc0a66349.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Mangawala</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 1509</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 623</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 445</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 70</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 399</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">364</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">234</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">43</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 400</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">259</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">211</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">27</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f458a736b015bb75d267bb730a8e7c61 = L.circleMarker(
+                [29.067834646767228, 78.93306078347894],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_f458a736b015bb75d267bb730a8e7c61.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Narendrapur</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 985</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 744</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 59</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 3</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 382</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">744</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">59</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">3</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f2987d5af787201eb21a8ef48166218e = L.circleMarker(
+                [29.05338418664003, 78.91426495037915],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_f2987d5af787201eb21a8ef48166218e.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: UDHOPURA</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 966</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 211</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 235</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 123</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth N/A</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">211</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">235</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">123</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2a30aa0a95616a650748570dee0c682 = L.circleMarker(
+                [29.07356630502998, 78.89899873422308],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_c2a30aa0a95616a650748570dee0c682.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Padiya Nagla</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 1670</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 445</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 666</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 207</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 383</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">240</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">512</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">11</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 384</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">205</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">154</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">196</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc3d721b33bd7115036683b15b96c048 = L.circleMarker(
+                [29.119530347169828, 78.94062990140102],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_dc3d721b33bd7115036683b15b96c048.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Peepal Gaon</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 1340</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 476</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 432</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 119</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 362</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">153</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">263</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">119</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 363</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">323</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">169</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">0</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2cfbd803123a0d4fac5d1fa5ff8c4e03 = L.circleMarker(
+                [29.062809556915493, 78.89873363055266],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_2cfbd803123a0d4fac5d1fa5ff8c4e03.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Sakatpura Mustahkam</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 770</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 428</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 71</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 134</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 388</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">428</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">71</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">134</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_de90cbaf688e10e761e0cd07afffd197 = L.circleMarker(
+                [29.029917024926394, 78.90947619051798],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_de90cbaf688e10e761e0cd07afffd197.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Satti Khera</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 1221</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 648</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 208</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 120</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 397</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">143</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">199</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">120</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 398</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">505</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">9</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">0</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b19f302604fb0a504676a3d4bb6e7331 = L.circleMarker(
+                [29.05427553722473, 78.9255395405656],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_b19f302604fb0a504676a3d4bb6e7331.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Tah Madan</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 1985</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 542</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 873</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 180</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 380</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">243</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">464</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">159</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 381</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">299</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">409</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">21</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40166d21eedbc506f13e10fbb1cd1a68 = L.circleMarker(
+                [29.004692513704217, 78.88150883876617],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_40166d21eedbc506f13e10fbb1cd1a68.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Udawala</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 1964</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 347</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 972</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 137</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 418</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">249</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">401</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">103</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 419</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">98</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">571</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">34</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44dcca275d73b97615cd9ba044bdc680 = L.circleMarker(
+                [29.02589697198902, 78.92332349961808],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_44dcca275d73b97615cd9ba044bdc680.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Udmawala village</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 2337</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 686</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 976</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 106</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 394</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">140</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">413</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">79</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 395</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">255</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">412</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">17</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 396</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">291</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">151</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">10</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_98af4be91704925396ae27e69f683d47 = L.circleMarker(
+                [29.11816193149961, 78.9604998220169],
+                {"bubblingMouseEvents": true, "color": "yellow", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_98af4be91704925396ae27e69f683d47.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Veerpur</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 1518</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 516</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 479</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 253</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 358</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">37</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">393</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">200</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 359</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">479</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">86</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">53</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_69c03d51cb2ceef4e4bf07d7b5b35365 = L.circleMarker(
+                [29.00738311917873, 78.89567087093653],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_980d901f7e5d11db5a91471bee24a86f);
+        
+    
+            circle_marker_69c03d51cb2ceef4e4bf07d7b5b35365.bindTooltip(
+                `<div>
+                     
+    <div style="font-family: Arial, sans-serif; font-size: 12px; width: 250px;">
+        <h4 style="margin: 0 0 5px 0; color: #333;"><b>Village: Village bhatgawan Post bhagatpur</b></h4>
+        <p style="margin: 2px 0;"><b>Total Votes:</b> 2503</p>
+        <p style="margin: 2px 0;"><b>Total BJP:</b> 1064</p>
+        <p style="margin: 2px 0;"><b>Total SP:</b> 765</p>
+        <p style="margin: 2px 0;"><b>Total BSP:</b> 77</p>
+        
+        <h5 style="margin: 8px 0 4px 0;"><b>Booth-wise Breakdown:</b></h5>
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">Booth</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BJP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">SP</th>
+                    <th style="padding: 2px 8px; border: 1px solid #ccc;">BSP</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 415</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">498</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">95</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">1</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 416</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">290</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">115</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">37</td>
+        </tr>
+        
+        <tr>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">Booth 417</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">276</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">555</td>
+            <td style="padding: 2px 8px; border: 1px solid #ccc;">39</td>
+        </tr>
+        
+            </tbody>
+        </table>
+    </div>
+    
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
